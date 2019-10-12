@@ -803,7 +803,7 @@ let UserService = class UserService {
         this._getUsers();
     }
     _getUsers() {
-        return this.http.post('http://cs.sci.ubu.ac.th:7512/60114440396/user/_search', {
+        return this.http.post('http://cs.sci.ubu.ac.th:7512/59110440084/user/_search', {
             query: {
             /*
             wildcard: {
@@ -819,7 +819,7 @@ let UserService = class UserService {
     }
     _saveUser(usr, passwd) {
         console.log(`user=${usr} passwd:${passwd}`);
-        return this.http.post('http://cs.sci.ubu.ac.th:7512/60114440396/user/_create', {
+        return this.http.post('http://cs.sci.ubu.ac.th:7512/59110440084/user/_create', {
             user: usr,
             password: passwd,
         });
